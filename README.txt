@@ -13,5 +13,5 @@ A simple script to build working Google dorks.
 
 /////INSTRUCTIONS/////
 
-In order the script will ask you for the values of: intext, inurl, ext, link, intitle 
+The script will ask you for the values of: intext, inurl, ext, link, intitle 
 
