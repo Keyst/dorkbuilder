@@ -7,7 +7,7 @@ yes = "y" or "yes" or "Y"   #define yes response
 #####################################################################################
 intextyn = raw_input("Search for a specific text in the page? Y/N : ")
 if intextyn==yes:
-            intext = raw_input("In the page I am searching is wrote this: ")
+            intext = raw_input("Searching for these words in the pages i find: ")
 else:
             intext = None
 #####################################################################################
