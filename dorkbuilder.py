@@ -5,17 +5,23 @@ yes = "y" or "yes" or "Y"   #define yes response
 #####################################################################################
 #####################################################################################
 #####################################################################################
-intextyn = raw_input("Search for a specific text in the page? Y/N : ")
+intextyn = raw_input("Search for a specific text in webpages? Y/N : ")
 if intextyn==yes:
-            intext = raw_input("In the page I am searching is wrote this: ")
+            intext = raw_input("In the page I am searching is written this: ")
 else:
             intext = None
 #####################################################################################
-inurlyn = raw_input("Search for a specific URL? Y/N : ")
+inurlyn = raw_input("Search for specific words in URLs? Y/N : ")
 if inurlyn==yes:
-            inurl = raw_input("I want to search only for this URL: ")
+            inurl = raw_input("I want to search only for this URLs: ")
 else:
             inurl = None
+#####################################################################################
+siteyn = raw_input("Search only for a specific website? Y/N: ")
+if siteyn==yes
+            site = raw_input("Insert the URL of the website: ")
+else:
+            site = None
 #####################################################################################
 extyn = raw_input("Search for a specific file extension? Y/N : ")
 if extyn==yes:
@@ -46,6 +52,7 @@ intextout = "intext:"
 linkout = "link:"
 extout = "ext:"
 intitleout = "intitle:"
+siteout = "site:"
 
 if inurl==None:
        inurlout = ""
@@ -62,8 +69,11 @@ if ext==None:
 if intitle==None:
        intitleout = ""
        intitle = ""
-
-dork = (inurlout+inurl+" "+intextout+intext+" "+linkout+link+" "+extout+ext+" "+intitleout+intitle)
+if site==None:
+       siteout = ""
+       site = ""
+       
+dork = (siteout+site+" "+inurlout+inurl+" "+intextout+intext+" "+linkout+link+" "+extout+ext+" "+intitleout+intitle)
 print(dork)
 ######################################################################################################
 ######################################################################################################
@@ -85,4 +95,4 @@ if searchyn=="y":
        button.click()
        time.sleep(100000000)
 else:
-     print "Enjoy your dork :)"   
+     print "Enjoy your dork :)"    
