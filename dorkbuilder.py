@@ -18,7 +18,7 @@ else:
             inurl = None
 #####################################################################################
 siteyn = raw_input("Search only for a specific website? Y/N: ")
-if siteyn==yes
+if siteyn==yes:
             site = raw_input("Insert the URL of the website: ")
 else:
             site = None
