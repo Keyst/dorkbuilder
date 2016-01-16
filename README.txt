@@ -6,12 +6,12 @@
 | $$  | $$| $$  | $$| $$   \$$| $$   $$ | $$  | $$| $$  | $$| $$| $$| $$  | $$| $$    $$| $$   \$$
 | $$__| $$| $$__/ $$| $$      | $$$$$$\ | $$__/ $$| $$__/ $$| $$| $$| $$__| $$| $$$$$$$$| $$      
  \$$    $$ \$$    $$| $$      | $$  \$$\| $$    $$ \$$    $$| $$| $$ \$$    $$ \$$     \| $$      
-  \$$$$$$$  \$$$$$$  \$$       \$$   \$$ \$$$$$$$   \$$$$$$  \$$ \$$  \$$$$$$$  \$$$$$$$ \$$            v. 1.0
+  \$$$$$$$  \$$$$$$  \$$       \$$   \$$ \$$$$$$$   \$$$$$$  \$$ \$$  \$$$$$$$  \$$$$$$$ \$$            v. 1.1
                                                                                                   
                                                                                                  
 A simple script to build working Google dorks.
 
 /////INSTRUCTIONS/////
 
-The script will ask you for the values of: intext, inurl, ext, link, intitle 
-
+The script will ask you for the values of: intext, inurl, ext, link, intitle. It will search the dork for you.
+ATTENTION: Splinter library is required to use the search function.
