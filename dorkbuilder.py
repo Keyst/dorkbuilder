@@ -69,18 +69,20 @@ print(dork)
 ######################################################################################################
 
 #Now splinter will search the dork for you...
+searchyn = raw_input("Do you want to search the dork now? Y/N: ")
+if searchyn=="y":
+     print "Opening browser and searching your dork for you..."
 
-print "Opening browser and searching your dork for you..."
+     from splinter import Browser
 
-from splinter import Browser
-
-with Browser() as firefox:
-    firefox.visit("http://www.google.com")
-    firefox.reload()
-    firefox.visit("http://www.google.com")
-    time.sleep(1)
-    firefox.fill('q', dork)
-    button = firefox.find_by_name('btnK')
-    button.click()
-    time.sleep(100000000)
-    
+     with Browser() as firefox:
+       firefox.visit("http://www.google.com")
+       firefox.reload()
+       firefox.visit("http://www.google.com")
+       time.sleep(1)
+       firefox.fill('q', dork)
+       button = firefox.find_by_name('btnK')
+       button.click()
+       time.sleep(100000000)
+else:
+     print "Enjoy your dork :)"   
